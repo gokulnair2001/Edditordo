@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		556F781124F241F500AC813C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F781024F241F500AC813C /* AppDelegate.swift */; };
 		556F781324F241F500AC813C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F781224F241F500AC813C /* SceneDelegate.swift */; };
-		556F781524F241F500AC813C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F781424F241F500AC813C /* ViewController.swift */; };
+		556F781524F241F500AC813C /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556F781424F241F500AC813C /* MainViewController.swift */; };
 		556F781824F241F500AC813C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 556F781624F241F500AC813C /* Main.storyboard */; };
 		556F781A24F241F600AC813C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 556F781924F241F600AC813C /* Assets.xcassets */; };
 		556F781D24F241F600AC813C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 556F781B24F241F600AC813C /* LaunchScreen.storyboard */; };
+		55805F2624F2612A000BF55E /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55805F2524F2612A000BF55E /* HapticFeedback.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		556F780D24F241F500AC813C /* Edditordo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Edditordo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		556F781024F241F500AC813C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		556F781224F241F500AC813C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		556F781424F241F500AC813C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		556F781424F241F500AC813C /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		556F781724F241F500AC813C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		556F781924F241F600AC813C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		556F781C24F241F600AC813C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		556F781E24F241F600AC813C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55805F2524F2612A000BF55E /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +60,54 @@
 			children = (
 				556F781024F241F500AC813C /* AppDelegate.swift */,
 				556F781224F241F500AC813C /* SceneDelegate.swift */,
-				556F781424F241F500AC813C /* ViewController.swift */,
-				556F781624F241F500AC813C /* Main.storyboard */,
-				556F781924F241F600AC813C /* Assets.xcassets */,
-				556F781B24F241F600AC813C /* LaunchScreen.storyboard */,
+				556F782924F2422800AC813C /* Utilities */,
+				556F782824F2421F00AC813C /* SupportingFiles */,
+				556F782724F2421600AC813C /* Controller */,
+				556F782624F2421100AC813C /* View */,
+				556F782524F2420A00AC813C /* Model */,
 				556F781E24F241F600AC813C /* Info.plist */,
 			);
 			path = Edditordo;
+			sourceTree = "<group>";
+		};
+		556F782524F2420A00AC813C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		556F782624F2421100AC813C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				556F781624F241F500AC813C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		556F782724F2421600AC813C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				556F781424F241F500AC813C /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		556F782824F2421F00AC813C /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				556F781924F241F600AC813C /* Assets.xcassets */,
+				556F781B24F241F600AC813C /* LaunchScreen.storyboard */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		556F782924F2422800AC813C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				55805F2524F2612A000BF55E /* HapticFeedback.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +181,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				556F781524F241F500AC813C /* ViewController.swift in Sources */,
+				556F781524F241F500AC813C /* MainViewController.swift in Sources */,
+				55805F2624F2612A000BF55E /* HapticFeedback.swift in Sources */,
 				556F781124F241F500AC813C /* AppDelegate.swift in Sources */,
 				556F781324F241F500AC813C /* SceneDelegate.swift in Sources */,
 			);
