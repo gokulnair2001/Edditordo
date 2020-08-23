@@ -124,6 +124,19 @@
                                     <action selector="removeImageBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hac-Yf-BQQ"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Filter Applied" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ChK-b5-Jhb">
+                                <rect key="frame" x="116" y="694" width="183" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.83914974620000005" green="0.83914974620000005" blue="0.83914974620000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -156,6 +169,7 @@
                         <outlet property="ImageView" destination="FBp-CJ-9Wh" id="dwH-IS-klv"/>
                         <outlet property="addImage" destination="rGF-uZ-Qg4" id="chA-oJ-NxU"/>
                         <outlet property="changefilterBtn" destination="SJi-dl-k7b" id="d42-9e-bdh"/>
+                        <outlet property="filtername" destination="ChK-b5-Jhb" id="lV4-7g-OfV"/>
                         <outlet property="imageBackgroundView" destination="jVq-Lc-8xe" id="JxP-Hr-fBK"/>
                         <outlet property="intensitySlider" destination="ncO-IU-7M5" id="Rew-fy-jFi"/>
                         <outlet property="removeImage" destination="3ws-dX-rsX" id="EzK-lg-v22"/>

@@ -19,6 +19,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var imageBackgroundView: UIView!
     @IBOutlet weak var removeImage: UIButton!
     @IBOutlet weak var addImage: UIImageView!
+    @IBOutlet weak var filtername: UILabel!
     
     var context: CIContext!
     var filter: CIFilter!
@@ -34,7 +35,8 @@ class MainViewController: UIViewController {
         addImage.isHidden = false
         saveBtn.isHidden = true
         removeImage.isHidden = true
-        
+        filtername.isHidden = true
+
         context = CIContext()
         filter = CIFilter(name: "CISepiaTone")
         
@@ -156,7 +158,8 @@ extension MainViewController{
             alert.addAction(UIAlertAction(title: "CIVignette", style: .default, handler: setFilter))
             alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
             
-            if let popOverController = alert.popoverPresentationController{
+            
+         if let popOverController = alert.popoverPresentationController{
                 popOverController.sourceView = sender
                 popOverController.sourceRect = sender.bounds
             }
@@ -180,7 +183,9 @@ extension MainViewController{
             
             guard let beginImage = CIImage(image: ImageView.image!) else {return}
             filter.setValue(beginImage, forKey: kCIInputImageKey)
+            
             applyProcessing()
+            filterLabel(action: action)
         }
         else{
             let alert = UIAlertController(title: nil, message: "Add Image", preferredStyle: .alert)
@@ -213,5 +218,14 @@ extension MainViewController {
             present(alert, animated: true)
         }
         
+    }
+}
+
+//MARK:- Filter image name label method
+
+extension MainViewController{
+    func filterLabel(action: UIAlertAction){
+        filtername.text = action.title
+        filtername.isHidden = false
     }
 }
