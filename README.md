@@ -42,7 +42,7 @@ Edditor is a photo editor used to apply various sort of filters to your image.Th
 # Key Features 🔐
 * Intensity Slider
 * Save Option
-* 8+ Filters
+* 7+ Filters
 * Haptic Feedback
 
 # License ⚖️  
