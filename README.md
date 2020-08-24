@@ -33,6 +33,7 @@ Edditor is a photo editor used to apply various sort of filters to your image.Th
 
 * UIKit <br>
 * Core Image
+* AVKit
 
 # Snapshots of App 📸
 
@@ -42,6 +43,7 @@ Edditor is a photo editor used to apply various sort of filters to your image.Th
 * Intensity Slider
 * Save Option
 * 8+ Filters
+* Haptic Feedback
 
 # License ⚖️  
 
