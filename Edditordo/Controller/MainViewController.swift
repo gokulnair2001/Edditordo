@@ -36,7 +36,7 @@ class MainViewController: UIViewController {
         saveBtn.isHidden = true
         removeImage.isHidden = true
         filtername.isHidden = true
-
+        
         context = CIContext()
         filter = CIFilter(name: "CISepiaTone")
         
@@ -52,6 +52,7 @@ class MainViewController: UIViewController {
         ImageView.image = nil
         AddLabel.isHidden = false
         addImage.isHidden = false
+        filtername.isHidden = true
         haptic.haptiFeedback1()
     }
     
@@ -159,7 +160,7 @@ extension MainViewController{
             alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
             
             
-         if let popOverController = alert.popoverPresentationController{
+            if let popOverController = alert.popoverPresentationController{
                 popOverController.sourceView = sender
                 popOverController.sourceRect = sender.bounds
             }
@@ -171,6 +172,8 @@ extension MainViewController{
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             present(alert, animated: true)
         }
+        
+        haptic.haptiFeedback1()
     }
     
     func setFilter(action: UIAlertAction){
@@ -203,6 +206,7 @@ extension MainViewController {
     
     @IBAction func saveBtn(_ sender: Any) {
         UIImageWriteToSavedPhotosAlbum(ImageView.image!, self, #selector(image(_:didfinishSavingwithError:contextInfo:)), nil)
+        haptic.haptiFeedback1()
     }
     
     @objc func image(_ image: UIImage, didfinishSavingwithError error: Error?, contextInfo: UnsafeRawPointer){
