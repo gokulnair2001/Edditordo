@@ -55,6 +55,13 @@ MIT License<br> Please read the [License](https://github.com/gokulnair2001/Eddit
 * If you face issues in any step open a new issue.
 * To fix issues: Fork this repository, make your changes and make a Pull Request. 
 
+# Future Updates
+
+* Will ad various additional functions like
+* Add More Filters
+* Add option to crop, rotate
+* An Option to remove noise 
+
 # Imortant Message 
 
 * The constraints applied are not perfect better you run this app in iPhone 11 Pro Max.
