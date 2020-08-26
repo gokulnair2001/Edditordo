@@ -53,6 +53,7 @@ class MainViewController: UIViewController {
         AddLabel.isHidden = false
         addImage.isHidden = false
         filtername.isHidden = true
+        saveBtn.isHidden = true
         haptic.haptiFeedback1()
     }
     
