@@ -9,7 +9,7 @@ Edditordo is an image editor used to add various kinds of Filters on image using
 ![Badge](https://img.shields.io/badge/Core-Image-green)
 ![badge](https://img.shields.io/badge/Platfrom-iOS-orange)
 ![Badge](https://img.shields.io/badge/Photo-Editor-yellowgreen)
-![Badge](https://img.shields.io/badge/Image-Filter-orange)
+![Badge](https://img.shields.io/badge/Image-Filter-black)
 
 # Introduction ⚒  
 Edditor is a photo editor used to apply various sort of filters to your image.The app consists of intensity slider which can be used to change intensity of filter.
