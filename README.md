@@ -35,7 +35,7 @@ Edditor is a photo editor used to apply various sort of filters to your image.Th
 * Core Image
 * AVKit
 * CIImageFilter
-* CICoreImage
+* CICoreImages
 
 # Snapshots of App 📸
 
