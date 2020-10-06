@@ -16,7 +16,7 @@ Edditor is a photo editor used to apply various sort of Filters to your image.Th
 
 # Steps to run 📲
 
-* Clone or download the app from this repository. 👩‍💻
+* Clone or download the App from this repository. 👩‍💻
 * Open project file in terminal. 💻
 * Change the bundle Identifier. ⚙️
 * Press Ctrl + R to run the app. 📲
