@@ -18,7 +18,7 @@ Edditor is a photo editor used to apply various sort of Filters to your image.Th
 
 * Clone or download the App from this repository. 👩‍💻
 * Open project file in terminal. 💻
-* Change the bundle Identifier. ⚙️
+* Change the bundle identifier. ⚙️
 * Press Ctrl + R to run the app. 📲
 * Do star this repo and/or contribute if you like it.🙂 
 
