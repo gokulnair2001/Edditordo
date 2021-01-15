@@ -5,7 +5,7 @@ Edditordo is an Image editor used to add various kinds of Filters on Image using
 ![Badge](https://img.shields.io/badge/License-MIT-yellow) 
 ![Badge](https://img.shields.io/badge/Xcode-11.6-green)
 ![badge](https://img.shields.io/badge/Swift-5.0-red)
-![badge](https://img.shields.io/badge/iOS-13-blue)
+![badge](https://img.shields.io/badge/iOS-13+-blue)
 ![Badge](https://img.shields.io/badge/Core-Image-green)
 ![badge](https://img.shields.io/badge/Platfrom-iOS-orange)
 ![Badge](https://img.shields.io/badge/Photo-Editor-yellowgreen)
