@@ -1,6 +1,6 @@
 # Edditordo
 
-Edditordo is an Image editor used to add various kinds of Filters on Image using Core Image library
+Edditordo is an image editor used to add various kinds of Filters on Image using Core Image library
 
 ![Badge](https://img.shields.io/badge/License-MIT-yellow) 
 ![Badge](https://img.shields.io/badge/Xcode-11.6-green)
